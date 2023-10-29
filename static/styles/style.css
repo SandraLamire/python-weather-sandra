@@ -39,6 +39,7 @@ input, button {
 
 .site-footer p {
     margin: 0; /* Supprime la marge par défaut des paragraphes */
+    /* Couleur del'image récupérée sur https://imagecolorpicker.com/ */
     /* color:#60c0ec; */
     color:#0a9ada;
 }
@@ -59,7 +60,7 @@ input, button {
 
     input, button {
         font-size: 1.5rem;
-        padding: 0.5rem; /* Ajuste le rembourrage des champs d'entrée et des boutons pour les petits écrans */
+        padding: 0.5rem; /* Ajuste la taille des champs d'entrée et des boutons pour les petits écrans */
     }
 
     .site-footer {
