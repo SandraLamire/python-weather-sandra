@@ -22,3 +22,26 @@ input, button {
     padding: 1rem;
     border-radius: 10px;
 }
+
+.site-footer {
+    background-color: transparent;
+    padding: 20px; /* Ajoutez un espacement au besoin */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Place les éléments aux coins opposés */
+    align-items: center; /* Centre verticalement les éléments dans le footer */
+}
+
+.site-footer p {
+    margin: 0; /* Supprime la marge par défaut des paragraphes */
+}
+
+.site-footer .source {
+    text-align: left;
+}
+
+.site-footer .author {
+    text-align: right;
+}
