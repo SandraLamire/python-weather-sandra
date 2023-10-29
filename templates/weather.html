@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- variable définie dans server.py -->
     <title>Météo actuelle à {{ title }}</title>
+    <!-- favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='assets/cloud_icon.png') }}" type="image/png">
     <!-- Lien utilisé par Flask -->
     <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" />
 </head>
