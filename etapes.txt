@@ -1,0 +1,79 @@
+1/ Créer un environnement avec : 
+    py -m venv .venv dans mini_projects_python\LESSON23_final_project
+
+2/ Activer l'environnement avec :
+    . .venv\Scripts\activate
+
+3/ Installer les packages nécessaires avec :
+    pip install requests python-dotenv Flask waitress
+Flask = framework pour développement de petites ou moyennes applis web 
+(fourni outils, Libs, routes et vues... + serveur de développement intégré)
+waitress = serveur WSGI Python pour environnement de prod et non de développement
+
+4/ MAJ de pip si demandé
+    py -m pip install -U pip
+
+5/ Créer le fichier requirements nécessaire au déploiement
+    pip freeze > requirements.txt
+
+6/ Créer le fichier .gitignore avec .venv et .env 
+pour ne pas les inclure dans GitHub
+
+7/ Créer le fichier .env avec API_KEY de openweathermap.org
+
+8/ Initialiser le référentiel git avec :
+    git init
+
+9/ Créer un dossier static pour les fichiers CSS, javascript... 
+et y créer un dossier styles contenant un fichier style.css 
+et y ajouter le code CSS
+
+10/ Créer un dossier templates (= modèles) pour les fichiers html
+et y créer un fichier index.html (raccourci DOCTYPE : ! + enter)
+/!\ Vérifier que fichier HTML et non Django HTML en bas à droite de VsCode!!!
+
+11/ Créer un fichier weather.py and server.py
+
+12/ Ajouter les fichiers à Git avec :
+    git add .
+
+13/ Valider les fichiers avec (-m pour message) :
+    git commit -m "first commit"
+
+14/ Créer un repository vide sur GitHub
+
+15/ Envoyer les fichiers sur GitHub avec :
+    git remote add origin https://github.com/SandraLamire/nom_du_projet.git
+    git branch -M main
+    git push -u origin main
+ou copier les 3 lignes sur GitHub fournies après création du repo
+"...or push an existing repository from the command line"
+puis clic droit dans le terminal pour coller les lignes
+puis entrer pour valider chaque ligne l'une après l'autre
+
+16/ Aller sur render.com qui va extraire les fichiers GitHub pour les déployer
+et y créer un compte gratuit (signer avec GitHub)
+puis choisir "Build and deploy from a Git repository"
+
+17/ Configurer l'appli web avec :
+    Name (ex: python-weather) 
+    Region
+    Branch = main
+    Root directory (ne rien mettre)
+    Runtime = Python 3
+    Build Command = pip install -U pip && pip install -r requirements.txt
+    Start Command = python3 server.py
+
+    Instance = Free
+
+    Advanced :
+        key = API_KEY               value = copier la clé API
+        Add Environment Variable
+        key = PYTHON_VERSION        value = 3.11.5
+    
+    clic sur "Create Web Service" en bas de page
+
+    URL à utiliser s'affiche en haut de la page qui s'ouvre après
+
+
+=> https://python-weather-tito.onrender.com
