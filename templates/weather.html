@@ -12,12 +12,12 @@
 <body>
     <!-- variables définies dans server.py -->
     <h1>Météo actuelle à {{ title }}</h1>
-    <p>{{ status }} et température de {{ temp }} &deg;C</p>
+    <p>{{ status }}</p>
+    <p>Température de {{ temp }} &deg;C</p>
     <p>Température ressentie : {{ feels_like }} &deg;C</p>
 
     <form action="/weather">
         <input type="text" name="city" id="city" placeholder="Entrer une autre ville" />
-        <br>
         <button type="submit">Rechercher</button>
     </form>
 
