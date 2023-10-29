@@ -7,8 +7,8 @@
 ## Accès au service : https://python-weather-sandra.onrender.com
 
 ## Python version 3.12.0
-- Installer les dépendances : pip install -r requirements.txt
 - Ajouter un .venv et l'activer avec .venv\Scripts\activate
+- - Installer les dépendances : pip install -r requirements.txt
 - Ajouter un .env avec API_KEY = votreAPIKeyPerso
 - Ajouter un .gitignore avec :
    * .venv
