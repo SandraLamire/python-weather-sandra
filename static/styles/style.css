@@ -39,7 +39,8 @@ input, button {
 
 .site-footer p {
     margin: 0; /* Supprime la marge par défaut des paragraphes */
-    color:darkcyan;
+    /* color:#60c0ec; */
+    color:#0a9ada;
 }
 
 .site-footer .source {
@@ -48,4 +49,24 @@ input, button {
 
 .site-footer .author {
     text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 1rem; /* Ajuste l'espacement du corps pour les petits écrans */
+        font-size: 1.5rem; /* Ajuste la taille de la police pour les petits écrans */
+    }
+
+    input, button {
+        font-size: 1.5rem;
+        padding: 0.5rem; /* Ajuste le rembourrage des champs d'entrée et des boutons pour les petits écrans */
+    }
+
+    .site-footer {
+        padding: 10px; /* Ajuste l'espacement du pied de page pour les petits écrans */
+    }
+
+    .site-footer p {
+        font-size: 1.5rem; /* Ajuste la taille de la police du pied de page pour les petits écrans */
+    }
 }
