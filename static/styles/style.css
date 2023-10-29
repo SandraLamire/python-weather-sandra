@@ -19,14 +19,6 @@ body {
     background-position: center; /* Centre le fond */
 }
 
-/* input, button {
-    font-size: 2rem;
-    padding: 1rem;
-    border-radius: 10px;
-    flex-direction: column;
-    align-items: center;
-} */
-
 form {
     display: flex;
     flex-direction: column;
@@ -106,62 +98,3 @@ button {
         z-index: 1;
     }
 }
-
-/*
-/* @media only screen and (max-width: 600px) {
-    body {
-        padding: 1rem; /* Ajuste l'espacement du corps pour les petits écrans */ /*
-        text-align: center;
-        font-size: 1rem; /* Ajuste la taille de la police pour les petits écrans */ /*
-    }
-
-    input, button {
-        font-size: 1.5rem;
-        padding: 0.5rem; /* Ajuste la taille des champs d'entrée et des boutons pour les petits écrans */ /*
-    }
-
-    .site-footer {
-        padding: 10px; /* Ajuste l'espacement du pied de page pour les petits écrans */ /*
-    }
-
-    .site-footer p {
-        font-size: 0.75rem; /* Ajuste la taille de la police du pied de page pour les petits écrans */ /*
-    }
-}
-
-
-/* Règles pour gérer le positionnement du footer lors de l'affichage du clavier */
-/*
-@media screen and (max-width: 600px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    input:focus,
-    button:focus {
-        margin-bottom: 80px;
-    }
-
-    .site-footer {
-        visibility: visible; /* Rend le footer visible lorsque le clavier n'est pas ouvert */
-        /*
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        z-index: 1;
-    }
-
-    input, button {
-        font-size: 1.5rem;
-        padding: 0.5rem;
-    }
-
-    .site-footer {
-        padding: 10px;
-    }
-
-    .site-footer p {
-        font-size: 0.75rem;
-    }
-} 
- */
