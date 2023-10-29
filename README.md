@@ -13,6 +13,6 @@
 - Ajouter un .gitignore avec :
    * .venv
    * .env
-   * __pycache__
+   * "__pycache__"
 - Lancer server.py
 - Ouvrir navigateur sur localhost:8000
