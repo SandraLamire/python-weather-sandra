@@ -85,7 +85,6 @@ button {
     }
 
     /* Règles pour gérer le positionnement du footer lors de l'affichage du clavier */
-    input:focus,
     button:focus {
         margin-bottom: 80px;
     }
