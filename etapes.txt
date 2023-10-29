@@ -69,14 +69,15 @@ puis choisir "Build and deploy from a Git repository"
     Advanced :
         key = API_KEY               value = copier la clé API
         Add Environment Variable
-        key = PYTHON_VERSION        value = 3.11.5
+        key = PYTHON_VERSION        value = 3.12.0
     
     clic sur "Create Web Service" en bas de page
 
     URL à utiliser s'affiche en haut de la page qui s'ouvre après
 
 
-=> https://python-weather-tito.onrender.com
+=> https://python-weather-sandra.onrender.com
+
 
 
 18/ A la récupération du projet, lancer:
