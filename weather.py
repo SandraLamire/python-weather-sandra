@@ -6,15 +6,15 @@ import os
 load_dotenv()
 
 def get_current_weather(city="Rennes"):
-    request_url = f'https://api.openweathermap.org/data/2.5/weather?appid={os.getenv("API_KEY")}&q={city}&units=metric'
+    request_url = f'https://api.openweathermap.org/data/2.5/weather?appid={os.getenv("API_KEY")}&q={city}&units=metric&lang=fr'
     
     weather_data = requests.get(request_url).json()
     
     return weather_data
 
 if __name__ == "__main__":
-    print('\n*** Get Current Weather Conditions ***\n')
-    city = input("\nPlease enter a city name: ")
+    print('\n*** Météo actuelle ***\n')
+    city = input("\nEntrer le nom d'une ville (Rennes par défaut): ")
     
     # Check for empty string or sting with only spaces
     if not bool(city.strip()):
