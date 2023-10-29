@@ -1,8 +1,8 @@
 1/ Créer un environnement avec : 
-    py -m venv .venv dans mini_projects_python\LESSON23_final_project
+    py -m venv .venv dans python_project\python-weather-sandra
 
 2/ Activer l'environnement avec :
-    . .venv\Scripts\activate
+    .venv\Scripts\activate
 
 3/ Installer les packages nécessaires avec :
     pip install requests python-dotenv Flask waitress
@@ -77,3 +77,7 @@ puis choisir "Build and deploy from a Git repository"
 
 
 => https://python-weather-tito.onrender.com
+
+
+18/ A la récupération du projet, lancer:
+    pip install -r requirements.txt
