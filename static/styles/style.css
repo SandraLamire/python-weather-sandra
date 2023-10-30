@@ -32,6 +32,7 @@ button {
     background-color: transparent;
     padding: 20px; /* Ajoute un espacement au besoin */
     bottom: 0;
+    position: absolute;
     width: 100%;
     display: flex;
     justify-content: space-around; /* Place les éléments aux coins opposés */
