@@ -3,6 +3,7 @@ from pprint import pprint
 import requests
 import os
 
+
 load_dotenv()
 
 def get_current_weather(city="Rennes"):
@@ -18,7 +19,7 @@ if __name__ == "__main__":
     
     # Check for empty string or sting with only spaces
     if not bool(city.strip()):
-        city = "Rennes"
+        city = "Rennes (par défaut)"
             
     weather_data = get_current_weather(city)
     print("\n")

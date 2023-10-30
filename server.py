@@ -16,10 +16,13 @@ def index():
 def get_weather():
     city = request.args.get('city')
     
-    # Check for empty string or sting with only spaces
-    if not bool(city.strip()):
-        city = "Rennes"
-    
+    # Check for none, empty string or string with only spaces or numbers
+    if city is None:
+        city=""
+
+    if city is None or not city.strip() or city.isdigit():
+        return render_template('city-not-found.html', city=city)
+
     weather_data = get_current_weather(city)
     
     # If city not found by API = {'cod': '404', 'message': 'city not found'}

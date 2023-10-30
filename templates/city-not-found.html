@@ -11,8 +11,18 @@
     <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" />
 </head>
 <body>
-    <h1>Ville non trouvée</h1>
-    <h2>Entrer une autre ville?</h2>
+
+    {% if city is defined %}
+        {% if not city.strip() %}
+            <h1>La ville n'a pas été trouvée...</h1>
+        {% elif city.isdigit() %}
+            <h1>Vous n'avez pas saisi le nom d'une ville</h1>
+        {% endif %}
+    {% else %}
+        <h1>La ville n'a pas été trouvée...</h1>
+    {% endif %}
+
+    <h3>Entrer une autre ville?</h3>
     <form action="/weather">
         <input type="text" name="city" id="city" placeholder="Entrer une autre ville" />
         <button type="submit">Rechercher</button>

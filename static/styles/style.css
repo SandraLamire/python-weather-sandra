@@ -31,7 +31,7 @@ button {
 .site-footer {
     background-color: transparent;
     padding: 20px; /* Ajoute un espacement au besoin */
-    bottom: 0;
+    bottom: 10px;
     position: absolute;
     width: 100%;
     display: flex;
@@ -76,9 +76,7 @@ button {
 
     .site-footer {
         padding: 10px;
-        position: absolute;
         bottom: 0;
-        width: 100%;
         max-height: 100px;
     }
 
