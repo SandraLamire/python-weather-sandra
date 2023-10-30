@@ -13,11 +13,7 @@
 <body>
 
     {% if city is defined %}
-        {% if not city.strip() %}
-            <h1>La ville n'a pas été trouvée...</h1>
-        {% elif city.isdigit() %}
-            <h1>Vous n'avez pas saisi le nom d'une ville</h1>
-        {% endif %}
+        <h1>Vous n'avez pas saisi le nom d'une ville</h1>
     {% else %}
         <h1>La ville n'a pas été trouvée...</h1>
     {% endif %}
